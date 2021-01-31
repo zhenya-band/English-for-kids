@@ -1,0 +1,19 @@
+.stat-btn {
+  margin-left: 30px;
+  padding: 11px 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffd86f;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #ffc82f;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .stat-btn {
+    margin-left: 13px;
+  }
+}

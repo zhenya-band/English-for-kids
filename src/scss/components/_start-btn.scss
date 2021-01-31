@@ -1,0 +1,46 @@
+.start-btn {
+  position: relative;
+  padding: 20px 55px;
+  margin: 0 auto 20px auto;
+  display: none;
+  border: none;
+  background-color: rgb(235, 72, 72);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  
+  &::before {
+    opacity: 0;
+  }
+  
+  &.active {
+    display: block;
+  }
+  
+  &.repeat {
+    padding: 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    transition: box-shadow .3s;
+    span {
+      display: none;
+    }
+
+    &:hover {
+      box-shadow: -1px 15px 30px -12px black;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 50px;
+      height: 50px;
+      background-image: url('../assets/img/repeat.svg');
+      opacity: 1;
+    }
+  }
+}
